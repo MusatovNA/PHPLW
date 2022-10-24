@@ -8,7 +8,7 @@ function sumTime(string $firstTime, string $secondTime): string
 
     $arrFirstTime = explode(':', $firstTime);
     $arrSecondTime = explode(':', $secondTime);
-    if (count($arrFirstTime)  != 3 || count($arrSecondTime)  != 3) {
+    if (count($arrFirstTime)  !== 3 || count($arrSecondTime)  !== 3) {
         return "incorrect input \n";
     }
 
