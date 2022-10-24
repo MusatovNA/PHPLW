@@ -3,13 +3,13 @@
 function sumTime(string $firstTime, string $secondTime): string
 {
     if (!checkStringTime($firstTime) || !checkStringTime($secondTime)) {
-        return "incorrect input \n";
+        return "incorrect input ";
     }
 
     $arrFirstTime = explode(':', $firstTime);
     $arrSecondTime = explode(':', $secondTime);
     if (count($arrFirstTime)  !== 3 || count($arrSecondTime)  !== 3) {
-        return "incorrect input \n";
+        return "incorrect input ";
     }
 
     $seconds = intval($arrFirstTime[2]) + intval($arrSecondTime[2]);
