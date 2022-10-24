@@ -49,7 +49,7 @@ function sumTime(string $firstTime, string $secondTime): string
 function checkStringTime(string $time): bool
 {
     if (is_null($time)) {
-        return "incorrect input \n";
+        return false;
     }
     
     if (!(strlen($time) === 8)) // длина строки "время"("00:00:00") должна быть фиксированной длинны = 8
