@@ -7,7 +7,7 @@ function calculator(string $example): string
     $result = 0;
 
     if (is_null($example)) {
-        return "incprrect input   18 \n";
+        return "incorrect input \n";
     }
 
     // проверка на корректность примера
@@ -20,7 +20,7 @@ function calculator(string $example): string
             $numbers[] = $symbol;
             $tempNumber = '';
         } else {
-            return "incprrect input   39 \n";
+            return "incorrect input \n";
         }
 
         if ($exampleCounter + 1 === strlen($example)) {
@@ -32,7 +32,7 @@ function calculator(string $example): string
 
     //проверка на лимит слагаемых и арифм. операторов, который = 5
     if (count($numbers) > 9) {
-        return "incprrect input 60 \n";
+        return "incorrect input \n";
     }
 
     // сперва производится умножение и деление
